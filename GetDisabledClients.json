@@ -1,0 +1,29 @@
+
+        [
+        
+            {
+            "firstName" : "Jane",
+            "lastName" : "Doe",
+            "dateOfBirth" : "1985-07-12",
+            "email" : "jane.doe@example.com",
+            "phone" : "+33123456789",
+            "isDisabled" : true
+            },
+            {
+            "firstName" : "Emily",
+            "lastName" : "Johnson",
+            "dateOfBirth" : "1987-11-23",
+            "email" : "emily.johnson@example.com",
+            "phone" : "+33198765433",
+            "isDisabled" : true
+            },
+            {
+            "firstName" : "Robert",
+            "lastName" : "Smith",
+            "dateOfBirth" : "2008-06-30",
+            "email" : "robert.smith@example.com",
+            "phone" : "+33123456790",
+            "isDisabled" : true
+            }
+        ]
+    

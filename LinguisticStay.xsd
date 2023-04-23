@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.org/LinguisticStay"
+           xmlns:ls="http://www.example.org/LinguisticStay"
+           elementFormDefault="qualified">
+
+    <!-- simple types definitions -->
+
+    <xs:simpleType name="publicType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="adults"/>
+            <xs:enumeration value="family"/>
+            <xs:enumeration value="children/teenagers"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="stayType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="vacationCamp"/>
+            <xs:enumeration value="schoolTrip"/>
+            <xs:enumeration value="familyTrip"/>
+            <xs:enumeration value="businessTrip"/>
+            <xs:enumeration value="other"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- complex types definitions -->
+    <xs:complexType name="person">
+        <xs:sequence>
+            <xs:element name="firstName" type="xs:string"/>
+            <xs:element name="lastName" type="xs:string"/>
+            <xs:element name="dateOfBirth" type="xs:date"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="phone" type="xs:string"/>
+            <xs:element name="isDisabled" type="xs:boolean"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="client">
+        <xs:complexContent>
+            <xs:extension base="ls:person">
+                <xs:sequence>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="accompanyingPerson">
+        <xs:complexContent>
+            <xs:extension base="ls:person">
+                <xs:sequence>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="teacher">
+        <xs:complexContent>
+            <xs:extension base="ls:person">
+                <xs:sequence>
+                    <xs:element name="subject" type="xs:string"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="linguisticFacility">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="stay" type="ls:stay" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="activity">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="date" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="languageCourse">
+        <xs:sequence>
+            <xs:element name="language" type="xs:string"/>
+            <xs:element name="level" type="xs:string"/>
+            <xs:element name="startDate" type="xs:date"/>
+            <xs:element name="endDate" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="stay">
+        <xs:sequence>
+            <xs:element name="type" type="ls:stayType"/>
+            <xs:element name="public" type="ls:publicType"/>
+            <xs:element name="destination" type="xs:string"/>
+            <xs:element name="disabilitiesAdapted" type="xs:boolean"/>
+            <xs:element name="startDate" type="xs:date"/>
+            <xs:element name="endDate" type="xs:date"/>
+            <xs:element name="languageCourse" type="ls:languageCourse" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="activity" type="ls:activity" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="client" type="ls:client" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="accompanyingPerson" type="ls:accompanyingPerson" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="teacher" type="ls:teacher" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <!-- elements definitions -->
+
+    <xs:element name="linguisticFacilities">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="linguisticFacility" type="ls:linguisticFacility" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ls:linguisticFacilities"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

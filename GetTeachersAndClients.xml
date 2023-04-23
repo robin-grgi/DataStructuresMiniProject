@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><participants xmlns:ls="http://www.example.org/LinguisticStay">
+    <participant type="client">
+        <firstName>Jane</firstName>
+        <lastName>Doe</lastName>
+        <dateOfBirth>1985-07-12</dateOfBirth>
+        <email>jane.doe@example.com</email>
+        <phone>+33123456789</phone>
+        <isDisabled>true</isDisabled>
+    </participant>
+    <participant type="client">
+        <firstName>John</firstName>
+        <lastName>Doe</lastName>
+        <dateOfBirth>1982-04-28</dateOfBirth>
+        <email>john.doe@example.com</email>
+        <phone>+33198765432</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="client">
+        <firstName>Emily</firstName>
+        <lastName>Johnson</lastName>
+        <dateOfBirth>1987-11-23</dateOfBirth>
+        <email>emily.johnson@example.com</email>
+        <phone>+33198765433</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="client">
+        <firstName>Robert</firstName>
+        <lastName>Smith</lastName>
+        <dateOfBirth>2008-06-30</dateOfBirth>
+        <email>robert.smith@example.com</email>
+        <phone>+33123456790</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="client">
+        <firstName>Olivia</firstName>
+        <lastName>Williams</lastName>
+        <dateOfBirth>2007-03-12</dateOfBirth>
+        <email>olivia.williams@example.com</email>
+        <phone>+33198765434</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="client">
+        <firstName>James</firstName>
+        <lastName>Jones</lastName>
+        <dateOfBirth>2009-05-10</dateOfBirth>
+        <email>james.jones@example.com</email>
+        <phone>+33198765435</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="teacher">
+        <firstName>Michael</firstName>
+        <lastName>Brown</lastName>
+        <dateOfBirth>1985-08-14</dateOfBirth>
+        <email>michael.brown@example.com</email>
+        <phone>+442012345679</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+    <participant type="teacher">
+        <firstName>William</firstName>
+        <lastName>Taylor</lastName>
+        <dateOfBirth>1991-01-22</dateOfBirth>
+        <email>william.taylor@example.com</email>
+        <phone>+442012345681</phone>
+        <isDisabled>false</isDisabled>
+    </participant>
+</participants>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ls:root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.example.org/LinguisticStay LinguisticStay.xsd"
+         xmlns:ls="http://www.example.org/LinguisticStay">
+    <ls:linguisticFacilities>
+        <ls:linguisticFacility>
+            <ls:name>ABC Language School</ls:name>
+            <ls:location>London, UK</ls:location>
+            <ls:stay id="1">
+                <ls:type>familyTrip</ls:type>
+                <ls:public>adults</ls:public>
+                <ls:destination>London, UK</ls:destination>
+                <ls:disabilitiesAdapted>false</ls:disabilitiesAdapted>
+                <ls:startDate>2023-06-10</ls:startDate>
+                <ls:endDate>2023-06-20</ls:endDate>
+                <ls:languageCourse>
+                    <ls:language>English</ls:language>
+                    <ls:level>B2</ls:level>
+                    <ls:startDate>2023-06-10</ls:startDate>
+                    <ls:endDate>2023-06-20</ls:endDate>
+                </ls:languageCourse>
+                <ls:activity>
+                    <ls:name>City Tour</ls:name>
+                    <ls:type>Sightseeing</ls:type>
+                    <ls:location>London, UK</ls:location>
+                    <ls:date>2023-06-11</ls:date>
+                </ls:activity>
+                <ls:client>
+                    <ls:firstName>Jane</ls:firstName>
+                    <ls:lastName>Doe</ls:lastName>
+                    <ls:dateOfBirth>1985-07-12</ls:dateOfBirth>
+                    <ls:email>jane.doe@example.com</ls:email>
+                    <ls:phone>+33123456789</ls:phone>
+                    <ls:isDisabled>true</ls:isDisabled>
+                </ls:client>
+                <ls:client>
+                    <ls:firstName>John</ls:firstName>
+                    <ls:lastName>Doe</ls:lastName>
+                    <ls:dateOfBirth>1982-04-28</ls:dateOfBirth>
+                    <ls:email>john.doe@example.com</ls:email>
+                    <ls:phone>+33198765432</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                </ls:client>
+                <ls:client>
+                    <ls:firstName>Emily</ls:firstName>
+                    <ls:lastName>Johnson</ls:lastName>
+                    <ls:dateOfBirth>1987-11-23</ls:dateOfBirth>
+                    <ls:email>emily.johnson@example.com</ls:email>
+                    <ls:phone>+33198765433</ls:phone>
+                    <ls:isDisabled>true</ls:isDisabled>
+                </ls:client>
+                <ls:accompanyingPerson>
+                    <ls:firstName>Alice</ls:firstName>
+                    <ls:lastName>Smith</ls:lastName>
+                    <ls:dateOfBirth>1990-12-01</ls:dateOfBirth>
+                    <ls:email>alice.smith@example.com</ls:email>
+                    <ls:phone>+442012345678</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                </ls:accompanyingPerson>
+                <ls:teacher>
+                    <ls:firstName>Michael</ls:firstName>
+                    <ls:lastName>Brown</ls:lastName>
+                    <ls:dateOfBirth>1985-08-14</ls:dateOfBirth>
+                    <ls:email>michael.brown@example.com</ls:email>
+                    <ls:phone>+442012345679</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                    <ls:subject>English</ls:subject>
+                </ls:teacher>
+            </ls:stay>
+        </ls:linguisticFacility>
+        <ls:linguisticFacility>
+            <ls:name>ABC Language School</ls:name>
+            <ls:location>London, UK</ls:location>
+            <ls:stay id="2">
+                <ls:type>schoolTrip</ls:type>
+                <ls:public>children/teenagers</ls:public>
+                <ls:destination>New York, USA</ls:destination>
+                <ls:disabilitiesAdapted>true</ls:disabilitiesAdapted>
+                <ls:startDate>2023-07-01</ls:startDate>
+                <ls:endDate>2023-07-15</ls:endDate>
+                <ls:languageCourse>
+                    <ls:language>English</ls:language>
+                    <ls:level>A2</ls:level>
+                    <ls:startDate>2023-07-01</ls:startDate>
+                    <ls:endDate>2023-07-15</ls:endDate>
+                </ls:languageCourse>
+                <ls:activity>
+                    <ls:name>Statue of Liberty</ls:name>
+                    <ls:type>Sightseeing</ls:type>
+                    <ls:location>Statue of Liberty, New York City, USA</ls:location>
+                    <ls:date>2023-07-02</ls:date>
+                </ls:activity>
+                <ls:client>
+                    <ls:firstName>Robert</ls:firstName>
+                    <ls:lastName>Smith</ls:lastName>
+                    <ls:dateOfBirth>2008-06-30</ls:dateOfBirth>
+                    <ls:email>robert.smith@example.com</ls:email>
+                    <ls:phone>+33123456790</ls:phone>
+                    <ls:isDisabled>true</ls:isDisabled>
+                </ls:client>
+                <ls:client>
+                    <ls:firstName>Olivia</ls:firstName>
+                    <ls:lastName>Williams</ls:lastName>
+                    <ls:dateOfBirth>2007-03-12</ls:dateOfBirth>
+                    <ls:email>olivia.williams@example.com</ls:email>
+                    <ls:phone>+33198765434</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                </ls:client>
+                <ls:client>
+                    <ls:firstName>James</ls:firstName>
+                    <ls:lastName>Jones</ls:lastName>
+                    <ls:dateOfBirth>2009-05-10</ls:dateOfBirth>
+                    <ls:email>james.jones@example.com</ls:email>
+                    <ls:phone>+33198765435</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                </ls:client>
+                <ls:accompanyingPerson>
+                    <ls:firstName>Charlotte</ls:firstName>
+                    <ls:lastName>Moore</ls:lastName>
+                    <ls:dateOfBirth>1993-10-18</ls:dateOfBirth>
+                    <ls:email>charlotte.moore@example.com</ls:email>
+                    <ls:phone>+442012345680</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                </ls:accompanyingPerson>
+                <ls:teacher>
+                    <ls:firstName>William</ls:firstName>
+                    <ls:lastName>Taylor</ls:lastName>
+                    <ls:dateOfBirth>1991-01-22</ls:dateOfBirth>
+                    <ls:email>william.taylor@example.com</ls:email>
+                    <ls:phone>+442012345681</ls:phone>
+                    <ls:isDisabled>false</ls:isDisabled>
+                    <ls:subject>English</ls:subject>
+                </ls:teacher>
+            </ls:stay>
+        </ls:linguisticFacility>
+    </ls:linguisticFacilities>
+</ls:root>
+
