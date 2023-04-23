@@ -22,8 +22,11 @@ J'ai fait le choix de créer une base de données XML avec une structure hiérar
 correspondant aux établissements de séjours linguistiques car ce sont ces éléments qui relient l'ensemble des acteurs (
 clients, accompagnateurs et professeurs) évoqués dans le sujet.
 
-Cette hiérarchie est modélisée dans le [schéma XML](www.github.com/robin-grgi) qui met en place toutes les contraintes
+Cette hiérarchie est modélisée dans le [schéma XML](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/LinguisticStay.xsd) qui met en place toutes les contraintes
 de la base de données.
+
+Une fois le schéma XML créé, il est possible de créer une base de données XML valide en respectant les contraintes
+imposées par le schéma. C'est ce que j'ai fait dans le fichier [LinguisticStay.xml](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/LinguisticStay.xml).
 
 ### Avantages de la modélisation
 
@@ -45,7 +48,7 @@ toutes les occurrences de ce client dans la base de données.
 Le premier scénario consiste à afficher tous les séjours linguistiques de la base de données. Pour cela, il suffit de
 parcourir la base de données et d'afficher les informations de chaque séjour linguistique.
 
-On obtient ainsi le [résultat]() suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -71,7 +74,7 @@ souhaite visiter un pays en particulier par exemple. Pour cela, il suffit de par
 les informations de chaque séjour linguistique dont la ville correspond à la ville donnée en paramètre. Dans l'exemple
 ci-dessous, on affiche tous les séjours linguistiques de Londres.
 
-On obtient ainsi le [résultat]() suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -94,7 +97,7 @@ handicap. Pour cela, il suffit de parcourir la base de données et d'afficher le
 linguistique dont le champ "disabilitiesAdapted" est égal à true. Ainsi un client en situation de handicap pourra
 facilement trouver un séjour linguistique adapté à ses besoins.
 
-On obtient ainsi le [résultat]() suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -118,7 +121,7 @@ voyage linguistique, le tout via une API acceptant des fichiers XML ayant une sy
 données, il suffit de parcourir la base de données et d'afficher les informations de chaque client et de chaque
 professeur.
 
-On obtient ainsi le résultat suivant [(cliquez ici pour voir le fichier XML complet)]() :
+On obtient ainsi le résultat suivant [(cliquez ici pour voir le fichier XML complet)](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetTeachersAndClients.xml) :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
