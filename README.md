@@ -48,7 +48,7 @@ toutes les occurrences de ce client dans la base de données.
 Le premier scénario consiste à afficher tous les séjours linguistiques de la base de données. Pour cela, il suffit de
 parcourir la base de données et d'afficher les informations de chaque séjour linguistique.
 
-On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+Grâce au fichier [GetAllStays.xsl](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetAllStays.xsl), on obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -74,7 +74,7 @@ souhaite visiter un pays en particulier par exemple. Pour cela, il suffit de par
 les informations de chaque séjour linguistique dont la ville correspond à la ville donnée en paramètre. Dans l'exemple
 ci-dessous, on affiche tous les séjours linguistiques de Londres.
 
-On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+Grâce au fichier [GetLondonStays.xsl](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetLondonStays.xsl), on obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -97,7 +97,7 @@ handicap. Pour cela, il suffit de parcourir la base de données et d'afficher le
 linguistique dont le champ "disabilitiesAdapted" est égal à true. Ainsi un client en situation de handicap pourra
 facilement trouver un séjour linguistique adapté à ses besoins.
 
-On obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
+Grâce au fichier [GetAccessibleStays.xsl](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetAccessibleStays.xsl), on obtient ainsi le résultat suivant (le rapport ne prend pas en compte les feuilles de style CSS):
 
 <html xmlns:ls="http://www.example.org/LinguisticStay">
     <body>
@@ -121,7 +121,7 @@ voyage linguistique, le tout via une API acceptant des fichiers XML ayant une sy
 données, il suffit de parcourir la base de données et d'afficher les informations de chaque client et de chaque
 professeur.
 
-On obtient ainsi le résultat suivant [(cliquez ici pour voir le fichier XML complet)](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetTeachersAndClients.xml) :
+Grâce au fichier [GetTeachersAndClients.xsl](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetTeachersAndClients.xsl), on obtient ainsi le résultat suivant [(cliquez ici pour voir le fichier XML complet)](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetTeachersAndClients.xml) :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -171,7 +171,7 @@ faciliter le quotidien de leurs clients durant le voyage linguistique. Cet envoi
 API acceptant des fichiers JSON ayant une syntaxe prédéfinie. Pour extraire ces données, il suffit de parcourir la base
 de données et d'afficher les informations de chaque client en situation de handicap.
 
-On obtient ainsi le résultat suivant :
+ Grâce au fichier [GetDisabledClients.xsl](https://github.com/robin-grgi/DataStructuresMiniProject/blob/main/GetDisabledClients.xsl), on obtient ainsi le résultat suivant :
 
 ```json
 [
